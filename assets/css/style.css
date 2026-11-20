@@ -564,11 +564,11 @@ svg { display: block; }
 .chat-panel {
   position: absolute;
   right: 0;
-  bottom: 76px;
+  bottom: 96px;
   display: flex;
   flex-direction: column;
   width: 392px;
-  height: min(660px, calc(100dvh - 130px));
+  height: min(700px, calc(100dvh - 120px));
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
