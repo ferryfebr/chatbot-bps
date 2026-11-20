@@ -185,78 +185,9 @@
         </div>
       </header>
 
-      <div class="chat-messages" id="chatMessages" role="log" aria-live="polite" aria-label="Percakapan dengan SAPA BPS">
+      <div class="chat-messages" id="chatMessages" role="log" aria-live="polite" aria-label="Percakapan dengan SAPA BPS"></div>
 
-        <!-- Pesan bot -->
-        <div class="msg msg--bot">
-          <div class="msg-avatar" aria-hidden="true">
-            <svg viewBox="0 0 48 48">
-              <rect width="48" height="48" rx="12" fill="#0b5cab" />
-              <rect x="11" y="26" width="6" height="12" rx="2" fill="#ffffff" />
-              <rect x="21" y="19" width="6" height="19" rx="2" fill="#8ec5f2" />
-              <rect x="31" y="12" width="6" height="26" rx="2" fill="#f5a623" />
-              <path d="M10 20c6-7 13-7 19-2s9 1 12-3" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity=".9" />
-            </svg>
-          </div>
-          <div class="bubble">
-            <p>Selamat datang di <strong>SAPA BPS</strong> 👋</p>
-            <p>Ada yang bisa saya bantu terkait data statistik?</p>
-            <div class="msg-meta"><span>09.41</span></div>
-          </div>
-        </div>
-
-        <!-- Pesan pengguna -->
-        <div class="msg msg--user">
-          <div class="bubble">
-            Bagaimana cara mengunduh publikasi BPS?
-            <div class="msg-meta">
-              <span>09.42</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 12.5 4 4L17 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m12 16.5 9-9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".65"/></svg>
-            </div>
-          </div>
-        </div>
-
-        <!-- Balasan bot + sumber -->
-        <div class="msg msg--bot">
-          <div class="msg-avatar" aria-hidden="true">
-            <svg viewBox="0 0 48 48">
-              <rect width="48" height="48" rx="12" fill="#0b5cab" />
-              <rect x="11" y="26" width="6" height="12" rx="2" fill="#ffffff" />
-              <rect x="21" y="19" width="6" height="19" rx="2" fill="#8ec5f2" />
-              <rect x="31" y="12" width="6" height="26" rx="2" fill="#f5a623" />
-              <path d="M10 20c6-7 13-7 19-2s9 1 12-3" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity=".9" />
-            </svg>
-          </div>
-          <div class="bubble">
-            <p>Cara mendapatkan publikasi BPS:</p>
-            <ul>
-              <li>Buka menu <strong>Publikasi</strong> di situs BPS.</li>
-              <li>Gunakan filter subjek atau tahun.</li>
-              <li>Unduh berkas PDF secara gratis.</li>
-            </ul>
-
-            <div class="sources">
-              <div class="sources-title">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
-                <span>Sumber resmi</span>
-              </div>
-              <a href="https://www.bps.go.id/id/publication" target="_blank" rel="noopener noreferrer">Publikasi BPS</a>
-              <a href="https://www.bps.go.id/id/statistics-table" target="_blank" rel="noopener noreferrer">Tabel Statistik</a>
-            </div>
-
-            <div class="msg-meta"><span>09.42</span></div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="chat-suggestions" id="chatSuggestions" aria-label="Pertanyaan yang disarankan">
-        <button type="button">Unduh publikasi</button>
-        <button type="button">Data kependudukan</button>
-        <button type="button">Inflasi</button>
-        <button type="button">Sensus penduduk</button>
-        <button type="button">Kontak BPS</button>
-      </div>
+      <div class="chat-suggestions" id="chatSuggestions" aria-label="Pertanyaan yang disarankan"></div>
 
       <form class="chat-form" id="chatForm" autocomplete="off">
         <button class="icon-btn attach-btn" type="button" aria-label="Lampirkan berkas" title="Lampirkan berkas">
@@ -265,7 +196,7 @@
         <div class="input-wrap">
           <textarea id="chatInput" rows="1" maxlength="600" placeholder="Tulis pertanyaan Anda…" aria-label="Pesan untuk SAPA BPS"></textarea>
         </div>
-        <button class="send-btn" id="sendBtn" type="button" aria-label="Kirim pesan">
+        <button class="send-btn" id="sendBtn" type="submit" aria-label="Kirim pesan">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 12 16-8-5.5 16-3.2-6.3L4 12Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"/><path d="M11.3 13.7 20 4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
         </button>
       </form>
@@ -277,6 +208,7 @@
     </section>
   </div>
 
+  <script src="assets/js/config.js"></script>
   <script src="assets/js/chat.js"></script>
 </body>
 </html>
